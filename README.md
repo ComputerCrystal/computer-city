@@ -1,2 +1,2 @@
 # computer-city
-Ideas i have for practice or hobby.
+Ideas i have for practice or hobby
