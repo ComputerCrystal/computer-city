@@ -2,12 +2,13 @@
 
 #include<iostream>
 #include<cstring>
+#include<string>
 
 using namespace std;
 
 int main(){
 	
-	float Ram,Rldo,Vam,Vldo,Cam,Cldo,Qam,Qldo;
+	float Ram=0,Rldo,Vam=0,Vldo,Cam=0,Cldo,Qam=0,Qldo;
 	float IC,VT,QT,CT,N_resistencias,N_voltajes,N_capacitores,N_cargas,RT;
 	string tipo,clase;
 	
@@ -123,7 +124,7 @@ int main(){
 			for(int i=1; i < N_resistencias; i++){
 			cout<<"Digite todas las resistencias del sistema: "; cin>>Rldo;
 			if(Rldo==0){
-				cout<<"\Error, datos insuficientes";
+				cout<<"\nError, datos insuficientes";
 				exit(1);
 			}	
 			Rldo = 1/Rldo;
