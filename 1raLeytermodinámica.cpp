@@ -11,34 +11,34 @@ int main() {
 	string proceso;
 
 	cout << "Primera ley de la termodinámica o ley de la conservación de la energía";
-	cout << "\nLa energía no se crea ni se destruye, solo se transfroma"<<endl;
+	cout << "\nLa energía no se crea ni se destruye, solo se transfroma" << endl;
 	cout << "Los procesos son los siguientes:"
 		"\n1.- Normal"
 		"\n2.- Adiabático"
 		"\n3.- Isocórico"
 		"\n4.- Isotérmico";
 	cout << "\nQue proceso desea calcular?: "; cin >> proceso;
-	if (proceso == "Normal" or proceso == "normal") {
+	 if (proceso == "Normal" or proceso == "normal") {
 		cout << "\nDigite el valor del calor(+ si absorbe o - si cede) en calorias: "; cin >> Q;
 		cout << "Digite el valor del trabajo termódinamico(+si realiza o - si le realizan): "; cin >> W;
 		if (Q == 0 or W == 0) {
-			cout << "Error, datos insuficientes"<<endl;
+			cout << "Error, datos insuficientes" << endl;
 			exit(1);
 		}
 		else {
 			VI = Q - W;
-			cout << "\nEl cambio en la energía interna es: " << VI<<endl;
+			cout << "\nEl cambio en la energía interna es: " << VI << endl;
 		}
 	}
-	if (proceso == "Adiabatico" or proceso == "adiabatico") {
+	else if (proceso == "Adiabatico" or proceso == "adiabatico") {
 		cout << "El sistema no recibe o cede calor (Q=0)";
 		cout << "\nDigite el valor del trabajo termodinámico: "; cin >> W;
 		VI = -W;
 		W = VI;
-		cout << "\nEl cambio en la energía interna es de: " << VI<<endl;
+		cout << "\nEl cambio en la energía interna es de: " << VI << endl;
 		cout << "\nEl valor del trabajo termodinámico es de: " << W << endl;
 	}
-	if (proceso == "Isocorico" or proceso == "isocorico") {
+	else if (proceso == "Isocorico" or proceso == "isocorico") {
 		cout << "\nEl volumen del sistema es constante (W=0)";
 		cout << "\nDigite el valor del calor: "; cin >> Q;
 		VI = Q;
@@ -53,7 +53,7 @@ int main() {
 		cout << "\nEl valor del calor es: " << Q << endl;
 	}
 	else {
-		cout << "\nERROR, PROCESO NO IDENTIFICADO"<<endl;
+		cout << "\nERROR, PROCESO NO IDENTIFICADO" << endl;
 	}
 
 	return 0;
