@@ -1,4 +1,4 @@
-//Primera ley de la termodinámica/conservación de la energía//
+//Derivada de una función con potencia//
 
 #include<iostream>
 #include<cstring>
