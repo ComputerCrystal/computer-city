@@ -13,13 +13,13 @@ int main(){
 	string tipo,clase;
 	
 	cout<<"Que clase de circuito desea calcular: "; getline(cin,clase);
-	if(clase=="resistencias" or clase=="resistencia"){   //El programa calculara lo pedido de acuerdo al circuito con resistencias//
+	if((clase=="resistencias")||(clase=="resistencia")){   //El programa calculara lo pedido de acuerdo al circuito con resistencias//
 		cout<<"De que tipo: "; getline(cin,tipo);
-		if(tipo=="serie" or tipo=="en serie"){ //La clase sera un circuito en serie//
+		if((tipo=="serie")||(tipo=="en serie")){ //La clase sera un circuito en serie//
 		cout<<"Cuantos valores de resistencia tiene(0 o 1 si no conoce): "; cin>>N_resistencias;
-		if(N_resistencias==0 or N_resistencias==1){
+		if((N_resistencias==0)||(N_resistencias==1)){
 			cout<<"Cuantos valores de voltajes tiene: "; cin>>N_voltajes;
-			if(N_voltajes==0 or N_voltajes==1 or N_voltajes < 0){
+			if((N_voltajes==0)||(N_voltajes==1)||(N_voltajes < 0)){
 			cout<<"Error, datos insuficientes o numero negativo";
 			exit(1);
 			}
@@ -54,7 +54,7 @@ int main(){
 			Ram = Ram + Rldo; //calcula la resistencia total//
 			}
 			cout<<"Cuantos valores de voltaje tiene(0 o 1 si no conoce el dato): "; cin>>N_voltajes;
-			if(N_voltajes==0 or N_voltajes==1){
+			if((N_voltajes==0)||(N_voltajes==1)){
 				cout<<"Digite la intensidad de corriente: "; cin>>IC;
 				if(IC==0){
 				cout<<"Error, datos insuficientes";
@@ -100,12 +100,12 @@ int main(){
 			exit(1);
 		}
 }
-		else if(tipo=="paralelo" or tipo=="en paralelo"){ //La clase sera un circuito en paralelo//
+		else if((tipo=="paralelo")||(tipo=="en paralelo")){ //La clase sera un circuito en paralelo//
 			cout<<"Cuantas resistencias tiene el sistema(0 o 1 si no conoce el dato): "; cin>>N_resistencias;
-			if(N_resistencias==0 or N_resistencias== 1){
+			if((N_resistencias==0)||(N_resistencias== 1)){
 				cout<<"Digite el voltaje total: "; cin>>VT;
 				cout<<"Digite el valor de la intensidad de corriente: "; cin>>IC;
-				if(VT==0 or IC==0){
+				if((VT==0)||(IC==0)){
 					cout<<"\nError, datos insuficientes";
 					exit(1);
 				}
@@ -163,14 +163,14 @@ int main(){
 		cout<<"Error, clase no reconocida";
 		}
 	}
-	else if(clase=="capacitores" or clase=="capacitor"){ //El programa calculara lo pedido de acuerdo al circuito con capacitores//
+	else if((clase=="capacitores")||(clase=="capacitor")){ //El programa calculara lo pedido de acuerdo al circuito con capacitores//
 		cout<<"De que tipo: "; getline(cin,tipo);
-		if(tipo=="serie" or tipo=="en serie"){ //La clase sera un circuito en serie//
+		if((tipo=="serie")||(tipo=="en serie")){ //La clase sera un circuito en serie//
 		cout<<"Cuantos capacitores tiene el sistema(0 o 1 si no conoce el dato): "; cin>>N_capacitores;
-		if(N_capacitores==0 or N_capacitores==1){
+		if((N_capacitores==0)||(N_capacitores==1)){
 			cout<<"Digite la carga total: "; cin>>QT;
 			cout<<"Digite el voltaje total: "; cin>>VT;
-			if(QT==0 or VT==0){
+			if((QT==0)||(VT==0)){
 				cout<<"\nError, datos insuficientes";
 				exit(1);
 			}
@@ -225,12 +225,12 @@ int main(){
 			exit(1);
 		}
 		}
-		else if(tipo=="paralelo" or tipo=="en paralelo"){ //La clase sera un circuito en paralelo//
+		else if((tipo=="paralelo")||(tipo=="en paralelo")){ //La clase sera un circuito en paralelo//
 		cout<<"Cuantos capacitores tiene el sistema(0 o 1 si no conoce el dato): "; cin>>N_capacitores;
-		if(N_capacitores==0 or N_capacitores==1){
+		if((N_capacitores==0)||(N_capacitores==1)){
 			cout<<"Digite la carga total: "; cin>>QT;
 			cout<<"Digite el voltaje total: "; cin>>VT;
-			if(QT==0 or VT==0){
+			if((QT==0)||(VT==0)){
 				cout<<"\nError, datos insuficientes";
 				exit(1);
 			}
