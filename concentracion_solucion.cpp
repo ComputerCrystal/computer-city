@@ -1,4 +1,4 @@
-//Traducir tu nombre a kaktakana//
+//Concentraciones de soluciones//
 
 #include<iostream>
 #include<cstring>
