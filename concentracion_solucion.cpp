@@ -13,8 +13,8 @@ int main() {
 	string tipo, unidad_q;
 
 	cout << "\tConcentraciones de soluciones" << endl;
-	cout << "\n1. Unidades quimícas"
-		"\n2. Unidades fisicas "<<endl;
+	cout << "\nUnidades quimícas"
+		"\nUnidades fisicas "<<endl;
 	cout << "\nQue tipo de unidad desea calcular: "; cin >> tipo;
 
 	if ((tipo == "Quimicas") || (tipo == "quimicas") || (tipo == "quimica")) {
